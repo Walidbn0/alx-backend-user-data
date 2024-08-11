@@ -1,4 +1,6 @@
-tion of filter_datum function that returns an obfuscated log message
+#!/usr/bin/env python3
+"""
+Definition of filter_datum function that returns an obfuscated log message
 """
 from typing import List
 import re
@@ -10,8 +12,6 @@ import mysql.connector
 PII_FIELDS = ('name', 'email', 'phone', 'ssn', 'password')
 
 
-#!/usr/bin/env python3
-"""
 def filter_datum(fields: List[str], redaction: str,
                  message: str, separator: str) -> str:
     """
